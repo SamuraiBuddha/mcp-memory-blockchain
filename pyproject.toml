@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "mcp-memory-blockchain"
+version = "0.1.0"
+description = "Blockchain-backed MCP memory system with Neo4j and Qdrant"
+authors = ["Jordan Ehrig <jordan@ehrig.com>"]
+readme = "README.md"
+packages = [{include = "mcp_memory_blockchain"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mcp = "^0.1.0"
+web3 = "^6.0.0"
+neo4j = "^5.0.0"
+qdrant-client = "^1.7.0"
+python-dotenv = "^1.0.0"
+aiofiles = "^23.0.0"
+click = "^8.0.0"
+rich = "^13.0.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.0.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

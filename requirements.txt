@@ -1,0 +1,32 @@
+# MCP SDK
+mcp>=0.1.0
+
+# Blockchain
+web3>=6.0.0
+hashlib
+cryptography>=41.0.0
+
+# Graph Database
+neo4j>=5.0.0
+
+# Vector Database
+qdrant-client>=1.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+aiofiles>=23.0.0
+click>=8.0.0
+rich>=13.0.0
+
+# Time precision
+requests>=2.31.0  # For calling mcp-time-precision if needed
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+
+# Development
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0

@@ -1,0 +1,6 @@
+# Minimal requirements for blockchain node
+web3>=6.0.0
+hashlib
+cryptography>=41.0.0
+aiohttp>=3.8.0
+click>=8.0.0
